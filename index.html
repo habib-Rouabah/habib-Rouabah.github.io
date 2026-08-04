@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadj Habib Rouabah — AI Engineer</title>
+    <meta name="description" content="AI Engineer specialized in LLM, RAG, AI Agents, and Machine Learning. Building intelligent systems with Google ADK, Python, and modern AI frameworks.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">HR<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
+                <li><a href="#experience" data-en="Experience" data-fr="Expérience">Experience</a></li>
+                <li><a href="#projects" data-en="Projects" data-fr="Projets">Projects</a></li>
+                <li><a href="#skills" data-en="Skills" data-fr="Compétences">Skills</a></li>
+                <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-separator">|</span>
+                    <span class="lang-option" data-lang="fr">FR</span>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting" data-en="Hello, I'm" data-fr="Bonjour, je suis">Hello, I'm</p>
+                <h1 class="hero-name">Hadj Habib<br>Rouabah</h1>
+                <h2 class="hero-title" data-en="AI Engineer & ML Specialist" data-fr="Ingénieur IA & Spécialiste ML">AI Engineer & ML Specialist</h2>
+                <p class="hero-description" data-en="Building intelligent AI agent systems, LLM pipelines, and machine learning solutions. Specialized in Google ADK, RAG architectures, and applied ML for industry." data-fr="Conception de systèmes d'agents IA intelligents, pipelines LLM et solutions de machine learning. Spécialisé en Google ADK, architectures RAG et ML appliqué à l'industrie.">Building intelligent AI agent systems, LLM pipelines, and machine learning solutions. Specialized in Google ADK, RAG architectures, and applied ML for industry.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary" data-en="Get in Touch" data-fr="Me contacter">Get in Touch</a>
+                    <a href="#projects" class="btn btn-secondary" data-en="View Projects" data-fr="Voir les projets">View Projects</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/hadj-habib-rouabah" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <!-- <a href="https://github.com/hrouabah" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a> -->
+                    <a href="mailto:rouabahhadjhabib@gmail.com" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <img src="assets/profile.jpg" alt="Hadj Habib Rouabah" class="hero-image" onerror="this.style.display='none'">
+                    <div class="hero-image-decoration"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span data-en="Scroll" data-fr="Défiler">Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-en="About Me" data-fr="À propos">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-en="AI Engineer with a double Master's degree in Artificial Intelligence from the University of Toulouse (Signal, Image & Machine Learning) and USTO Oran (AI & Applications)." data-fr="Ingénieur IA titulaire d'un double Master en Intelligence Artificielle de l'Université de Toulouse (Signal, Image & Apprentissage Automatique) et de l'USTO d'Oran (IA & Applications).">AI Engineer with a double Master's degree in Artificial Intelligence from the University of Toulouse (Signal, Image & Machine Learning) and USTO Oran (AI & Applications).</p>
+                    <p data-en="Currently building intelligent AI agent platforms at Ocean by Shiftmove using Google ADK, designing autonomous systems that automate complex business processes. Previously worked on ML models for metal additive manufacturing quality prediction and real-time chemical process optimization." data-fr="Actuellement en charge du développement d'une plateforme d'agents IA intelligents chez Ocean by Shiftmove avec Google ADK, concevant des systèmes autonomes pour l'automatisation de processus métiers complexes. Précédemment, développement de modèles ML pour la prédiction de qualité en fabrication additive métallique et l'optimisation de procédés chimiques en temps réel.">Currently building intelligent AI agent platforms at Ocean by Shiftmove using Google ADK, designing autonomous systems that automate complex business processes. Previously worked on ML models for metal additive manufacturing quality prediction and real-time chemical process optimization.</p>
+                    <p data-en="Passionate about bridging cutting-edge AI research with real-world industrial applications. I thrive in environments where I can push the boundaries of what's possible with LLMs, multi-agent systems, and applied machine learning." data-fr="Passionné par le lien entre la recherche de pointe en IA et les applications industrielles concrètes. Je m'épanouis dans des environnements où je peux repousser les limites du possible avec les LLM, les systèmes multi-agents et le machine learning appliqué.">Passionate about bridging cutting-edge AI research with real-world industrial applications. I thrive in environments where I can push the boundaries of what's possible with LLMs, multi-agent systems, and applied machine learning.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label" data-en="Years Experience" data-fr="Ans d'expérience">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label" data-en="Master's Degrees" data-fr="Masters obtenus">Master's Degrees</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label" data-en="AI Projects Delivered" data-fr="Projets IA livrés">AI Projects Delivered</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label" data-en="Industries Served" data-fr="Secteurs d'activité">Industries Served</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-en="Experience" data-fr="Expérience">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-en="Python Developer & AI Agent Engineer" data-fr="Développeur Python & Ingénieur Agent IA">Python Developer & AI Agent Engineer</h3>
+                                <p class="company">Ocean by Shiftmove — Aix-en-Provence</p>
+                            </div>
+                            <span class="timeline-date" data-en="Jan 2026 — Present" data-fr="Janv. 2026 — Présent">Jan 2026 — Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-en="Designing and developing an intelligent AI agent platform using Google ADK for business process automation" data-fr="Conception et développement d'une plateforme d'agents IA intelligents avec Google ADK pour l'automatisation des processus métiers">Designing and developing an intelligent AI agent platform using Google ADK for business process automation</li>
+                            <li data-en="Building multi-agent orchestration systems with tool-use capabilities and RAG pipelines" data-fr="Construction de systèmes d'orchestration multi-agents avec capacités d'utilisation d'outils et pipelines RAG">Building multi-agent orchestration systems with tool-use capabilities and RAG pipelines</li>
+                            <li data-en="Implementing conversational AI assistants integrated with enterprise APIs and databases" data-fr="Implémentation d'assistants IA conversationnels intégrés aux APIs et bases de données de l'entreprise">Implementing conversational AI assistants integrated with enterprise APIs and databases</li>
+                            <li data-en="Working with Vertex AI, Python, Docker, Kubernetes in a CI/CD environment" data-fr="Travail avec Vertex AI, Python, Docker, Kubernetes dans un environnement CI/CD">Working with Vertex AI, Python, Docker, Kubernetes in a CI/CD environment</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Google ADK</span>
+                            <span>Vertex AI</span>
+                            <span>Python</span>
+                            <span>RAG</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-en="R&D Machine Learning Engineer (Intern)" data-fr="Ingénieur Machine Learning R&D (Stage)">R&D Machine Learning Engineer (Intern)</h3>
+                                <p class="company">CESI Lineact — Strasbourg</p>
+                            </div>
+                            <span class="timeline-date" data-en="Feb 2025 — Aug 2025" data-fr="Fév. 2025 — Août 2025">Feb 2025 — Aug 2025</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-en="Developed ML models to predict part quality in metal additive manufacturing" data-fr="Développement de modèles ML pour prédire la qualité des pièces en fabrication additive métallique">Developed ML models to predict part quality in metal additive manufacturing</li>
+                            <li data-en="Implemented multi-objective optimization of fabrication parameters using NSGA-II" data-fr="Implémentation de l'optimisation multi-objectif des paramètres de fabrication via NSGA-II">Implemented multi-objective optimization of fabrication parameters using NSGA-II</li>
+                            <li data-en="Applied advanced feature engineering and model selection techniques" data-fr="Application de techniques avancées de feature engineering et de sélection de modèles">Applied advanced feature engineering and model selection techniques</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Machine Learning</span>
+                            <span>NSGA-II</span>
+                            <span>Python</span>
+                            <span>Scikit-Learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-en="R&D Data Scientist (Intern)" data-fr="Data Scientist R&D (Stage)">R&D Data Scientist (Intern)</h3>
+                                <p class="company">SORFERT — Algérie</p>
+                            </div>
+                            <span class="timeline-date" data-en="Jan 2023 — Jul 2023" data-fr="Janv. 2023 — Juil. 2023">Jan 2023 — Jul 2023</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-en="Optimized chemical processes in real-time using machine learning (TensorFlow, scikit-learn)" data-fr="Optimisation des procédés chimiques en temps réel via le machine learning (TensorFlow, scikit-learn)">Optimized chemical processes in real-time using machine learning (TensorFlow, scikit-learn)</li>
+                            <li data-en="Analyzed IoT/SCADA sensor data and built simulation models with MATLAB" data-fr="Analyse de données capteurs IoT/SCADA et construction de modèles de simulation avec MATLAB">Analyzed IoT/SCADA sensor data and built simulation models with MATLAB</li>
+                            <li data-en="Created interactive dashboards with Power BI for process monitoring" data-fr="Création de tableaux de bord interactifs avec Power BI pour le suivi des processus">Created interactive dashboards with Power BI for process monitoring</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>TensorFlow</span>
+                            <span>Scikit-Learn</span>
+                            <span>MATLAB</span>
+                            <span>Power BI</span>
+                            <span>IoT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-en="Featured Projects" data-fr="Projets phares">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-icon">🤖</div>
+                    <div class="project-content">
+                        <h3 data-en="AI Agent Platform" data-fr="Plateforme d'Agents IA">AI Agent Platform</h3>
+                        <p data-en="Multi-agent orchestration platform built with Google ADK for automating business processes. Features tool-use, RAG pipelines, and enterprise API integration." data-fr="Plateforme d'orchestration multi-agents construite avec Google ADK pour l'automatisation des processus métiers. Inclut l'utilisation d'outils, des pipelines RAG et l'intégration d'APIs d'entreprise.">Multi-agent orchestration platform built with Google ADK for automating business processes. Features tool-use, RAG pipelines, and enterprise API integration.</p>
+                        <div class="project-tags">
+                            <span>Google ADK</span>
+                            <span>Python</span>
+                            <span>Vertex AI</span>
+                            <span>RAG</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🎓</div>
+                    <div class="project-content">
+                        <h3 data-en="LLM-Powered Interactive Education" data-fr="Éducation Interactive par LLM">LLM-Powered Interactive Education</h3>
+                        <p data-en="RAG pipeline using Llama2 & Mixtral to generate quizzes, explanations, and examples from instructor documentation for enhanced learning." data-fr="Pipeline RAG utilisant Llama2 & Mixtral pour générer des quiz, explications et exemples depuis la documentation enseignante pour un apprentissage amélioré.">RAG pipeline using Llama2 & Mixtral to generate quizzes, explanations, and examples from instructor documentation for enhanced learning.</p>
+                        <div class="project-tags">
+                            <span>LLM</span>
+                            <span>RAG</span>
+                            <span>Llama2</span>
+                            <span>Mixtral</span>
+                            <span>Chainlit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🏭</div>
+                    <div class="project-content">
+                        <h3 data-en="Additive Manufacturing Quality Prediction" data-fr="Prédiction de Qualité en Fabrication Additive">Additive Manufacturing Quality Prediction</h3>
+                        <p data-en="ML models predicting part quality in metal 3D printing with multi-objective parameter optimization using NSGA-II evolutionary algorithm." data-fr="Modèles ML prédisant la qualité des pièces en impression 3D métallique avec optimisation multi-objectif des paramètres via l'algorithme évolutionnaire NSGA-II.">ML models predicting part quality in metal 3D printing with multi-objective parameter optimization using NSGA-II evolutionary algorithm.</p>
+                        <div class="project-tags">
+                            <span>ML</span>
+                            <span>NSGA-II</span>
+                            <span>Optimization</span>
+                            <span>Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">⚗️</div>
+                    <div class="project-content">
+                        <h3 data-en="Real-Time Chemical Process Optimization" data-fr="Optimisation de Procédés Chimiques en Temps Réel">Real-Time Chemical Process Optimization</h3>
+                        <p data-en="ML-driven optimization of chemical plant operations using IoT/SCADA data, TensorFlow models, and real-time monitoring dashboards." data-fr="Optimisation pilotée par ML des opérations d'une usine chimique via données IoT/SCADA, modèles TensorFlow et tableaux de bord de suivi en temps réel.">ML-driven optimization of chemical plant operations using IoT/SCADA data, TensorFlow models, and real-time monitoring dashboards.</p>
+                        <div class="project-tags">
+                            <span>TensorFlow</span>
+                            <span>IoT</span>
+                            <span>SCADA</span>
+                            <span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🚶</div>
+                    <div class="project-content">
+                        <h3 data-en="Fall Detection System" data-fr="Système de Détection de Chutes">Fall Detection System</h3>
+                        <p data-en="Computer vision system using YOLO for real-time fall detection with custom ML classification models for safety monitoring." data-fr="Système de vision par ordinateur utilisant YOLO pour la détection de chutes en temps réel avec des modèles ML personnalisés pour la surveillance de sécurité.">Computer vision system using YOLO for real-time fall detection with custom ML classification models for safety monitoring.</p>
+                        <div class="project-tags">
+                            <span>YOLO</span>
+                            <span>PyTorch</span>
+                            <span>OpenCV</span>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🧠</div>
+                    <div class="project-content">
+                        <h3 data-en="Neural Anomaly Detection" data-fr="Détection d'Anomalies Neuronales">Neural Anomaly Detection</h3>
+                        <p data-en="ML pipeline for detecting neuronal anomalies through signal processing, feature extraction, and classification models." data-fr="Pipeline ML pour la détection d'anomalies neuronales via le traitement du signal, l'extraction de caractéristiques et des modèles de classification.">ML pipeline for detecting neuronal anomalies through signal processing, feature extraction, and classification models.</p>
+                        <div class="project-tags">
+                            <span>Signal Processing</span>
+                            <span>Keras</span>
+                            <span>Pandas</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-en="Technical Skills" data-fr="Compétences Techniques">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🧠 AI & LLM</h3>
+                    <div class="skill-items">
+                        <span>Google ADK</span>
+                        <span>LLM / GPT</span>
+                        <span>RAG</span>
+                        <span>Prompt Engineering</span>
+                        <span>Multi-Agent Systems</span>
+                        <span>Vertex AI</span>
+                        <span>Langchain</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>📊 Machine Learning</h3>
+                    <div class="skill-items">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Scikit-Learn</span>
+                        <span>Keras</span>
+                        <span>Deep Learning</span>
+                        <span>Computer Vision</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>💻 Programming</h3>
+                    <div class="skill-items">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>C/C++</span>
+                        <span>Java</span>
+                        <span>R</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-en="🗄️ Data & Databases" data-fr="🗄️ Données & BDD">🗄️ Data & Databases</h3>
+                    <div class="skill-items">
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                        <span>MySQL</span>
+                        <span>Oracle</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-en="⚙️ DevOps & Tools" data-fr="⚙️ DevOps & Outils">⚙️ DevOps & Tools</h3>
+                    <div class="skill-items">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>CI/CD</span>
+                        <span>Git</span>
+                        <span>Jenkins</span>
+                        <span>Rancher</span>
+                        <span>Jira</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-en="🔬 Methods" data-fr="🔬 Méthodes">🔬 Methods</h3>
+                    <div class="skill-items">
+                        <span>Agile / Scrum</span>
+                        <span>UML</span>
+                        <span>MERISE</span>
+                        <span>MLOps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title" data-en="Education" data-fr="Formation">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-year">2023 — 2025</div>
+                    <h3 data-en="M.Sc. Signal, Image & Machine Learning" data-fr="Master Signal, Image & Apprentissage Automatique">M.Sc. Signal, Image & Machine Learning</h3>
+                    <p class="education-school" data-en="University of Toulouse, France" data-fr="Université de Toulouse, France">University of Toulouse, France</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-year">2021 — 2023</div>
+                    <h3 data-en="M.Sc. Artificial Intelligence & Applications" data-fr="Master Intelligence Artificielle & ses Applications">M.Sc. Artificial Intelligence & Applications</h3>
+                    <p class="education-school" data-en="USTO, Oran, Algeria" data-fr="USTO, Oran, Algérie">USTO, Oran, Algeria</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-year">2018 — 2021</div>
+                    <h3 data-en="B.Sc. Computer Information Systems" data-fr="Licence Systèmes Informatiques">B.Sc. Computer Information Systems</h3>
+                    <p class="education-school" data-en="USTO, Oran, Algeria" data-fr="USTO, Oran, Algérie">USTO, Oran, Algeria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Let's Connect" data-fr="Contactez-moi">Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-text" data-en="I'm currently looking for new opportunities in AI Engineering, ML Engineering, or Data Science roles. Let's discuss how I can contribute to your team." data-fr="Je suis actuellement à la recherche de nouvelles opportunités en Ingénierie IA, ML Engineering ou Data Science. Discutons de la façon dont je peux contribuer à votre équipe.">I'm currently looking for new opportunities in AI Engineering, ML Engineering, or Data Science roles. Let's discuss how I can contribute to your team.</p>
+                <div class="contact-links">
+                    <a href="mailto:rouabahhadjhabib@gmail.com" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span>rouabahhadjhabib@gmail.com</span>
+                    </a>
+                    <a href="tel:+33649400390" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>+33 6 49 40 03 90</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hadj-habib-rouabah" target="_blank" rel="noopener" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <!-- <a href="https://github.com/hrouabah" target="_blank" rel="noopener" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span>GitHub</span>
+                    </a> -->
+                </div>
+                <div class="contact-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span data-en="Marseille, France — Open to remote & relocation" data-fr="Marseille, France — Ouvert au télétravail & à la mobilité">Marseille, France — Open to remote & relocation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="&copy; 2026 Hadj Habib Rouabah. Built with passion." data-fr="&copy; 2026 Hadj Habib Rouabah. Construit avec passion.">&copy; 2026 Hadj Habib Rouabah. Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
